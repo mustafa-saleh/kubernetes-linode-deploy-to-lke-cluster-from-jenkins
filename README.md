@@ -60,17 +60,16 @@ High level flow:
 
 ```mermaid
 flowchart LR
-	Jenkins["Jenkins (CI)"] -->|Build & Push| ECR["Amazon ECR"]
 	Jenkins -->|kubectl| EKS["Amazon EKS Cluster"]
 	EKS --> Nodes["Managed Node Group / Fargate"]
-	Nodes -->|Run Pods| App["Java App Pods"]
+	Nodes -->|Run Pods| App["Nginx Pods"]
 ```
 
 Key points:
 
-- Jenkins builds the image and pushes to ECR
+- Jenkins builds the image and pushes to registry
 - Jenkins authenticates to Kubernetes using a kubeconfig that leverages AWS credentials
-- Kubernetes pulls the image from ECR and runs pods on worker nodes
+- Kubernetes pulls the image from registry and runs pods on worker nodes
 
 ## Implementation Guide
 
