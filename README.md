@@ -1,4 +1,4 @@
-# Kubernetes on AWS - Deploy to EKS Cluster from Jenkins
+# Kubernetes on AWS - Deploy to LKE Cluster from Jenkins
 
 Kubernetes (often abbreviated as K8s) is an open-source container orchestration platform designed to automate the deployment, scaling, management, and networking of containerized applications across a cluster of hosts.
 
