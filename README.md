@@ -94,7 +94,7 @@ Create an LKE cluster "test" using the Linode Cloud Manager or the Linode CLI an
 
 Create a virtual machine, install Docker and run Jenkins as a container, then SSH to the server to manage it.
 
-Example commands (adapt the host/user to your environment). These match the patterns used in the demo — see the referenced repo for more examples: https://github.com/mustafa-saleh/demo-module-8-build-automation-and-ci-cd-with-jenkins
+Example commands (adapt the host/user to your environment). These match the patterns used in the demo — see the referenced repo for more examples: https://github.com/mustafa-saleh/build-automation-and-ci-cd-with-jenkins
 
 ```bash
 # SSH to the Jenkins host
